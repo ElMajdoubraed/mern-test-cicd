@@ -30,8 +30,5 @@ jobs:
     - run: cd frontend && npm install && npm run build
     - run: ls && pwd
     #- run: npm install
-    - run: cd ..
-    - run: cd backend
-    - run: npm install
-    - run: cd ..
-    - run: ls
+    - run: cd backend && npm install
+    - run: ls && pwd
