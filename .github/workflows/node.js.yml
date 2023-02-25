@@ -28,7 +28,7 @@ jobs:
         #cache: 'npm'
         #cache-dependency-path: './server/package-lock.json'
     - run: cd frontend
-    - run: npm ci
+    - run: npm install
     - run: npm run build
     - run: cd ..
     - run: cd backend
