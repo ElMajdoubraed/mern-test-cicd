@@ -28,7 +28,5 @@ jobs:
         #cache: 'npm'
         #cache-dependency-path: './server/package-lock.json'
     - run: cd frontend && npm install && npm run build
-    - run: ls && pwd
-    #- run: npm install
     - run: cd backend && npm install
-    - run: ls && pwd
+    - run: sudo pm2 restart all
